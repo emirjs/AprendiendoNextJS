@@ -1,6 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import Stack from '@mui/material/Stack';
+import Avatar from '@mui/material/Avatar';
+
+
 
 export default function Home() {
   return (
@@ -22,24 +26,6 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h2>Documentation &rarr;</h2>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h2>Learn &rarr;</h2>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h2>Examples &rarr;</h2>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
           <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
@@ -50,7 +36,17 @@ export default function Home() {
             </p>
           </a>
         </div>
+
+    <Stack direction="row" spacing={2}>
+      
+      
+      <Avatar alt="Remy Sharp" src="https://static.wikia.nocookie.net/kirby/images/0/09/Kirby_Kirby%27s_Dream_Buffet.png" />
+<Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
+<Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+    </Stack>
+  
       </main>
+
 
       <footer className={styles.footer}>
         <a
