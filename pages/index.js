@@ -2,8 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Stack from '@mui/material/Stack';
-import Avatar from '@mui/material/Avatar';
-
+import { Avatar } from '@mui/material';
 
 
 export default function Home() {
@@ -39,10 +38,11 @@ export default function Home() {
 
     <Stack direction="row" spacing={2}>
       
-      
-      <Avatar alt="Remy Sharp" src="https://static.wikia.nocookie.net/kirby/images/0/09/Kirby_Kirby%27s_Dream_Buffet.png" />
-<Avatar alt="Travis Howard" src="/static/images/avatar/2.jpg" />
-<Avatar alt="Cindy Baker" src="/static/images/avatar/3.jpg" />
+    <Avatar alt="Kirby" src="https://static.wikia.nocookie.net/kirby/images/0/09/Kirby_Kirby%27s_Dream_Buffet.png" 
+        sx={{ width: 56, height: 56 }}/>
+      <Avatar alt="Pokeball" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Pokebola-pokeball-png-0.png/601px-Pokebola-pokeball-png-0.png" 
+       sx={{ width: 56, height: 56 }}/>
+
     </Stack>
   
       </main>
