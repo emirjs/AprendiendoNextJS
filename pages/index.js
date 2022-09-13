@@ -1,7 +1,10 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import Link from 'next/link'
 import styles from '../styles/Home.module.css'
-import Avatar from '@mui/material/Avatar'
+import Stack from '@mui/material/Stack';
+import Avatar from '@mui/material/Avatar';
+
 
 export default function Home() {
 	return (
@@ -28,9 +31,14 @@ export default function Home() {
 					sx={{ width: 56, height: 56 }}
 				/>
 
+				<Link href="/miPagina1">
+				<a>
+					Pagina 1
+				</a>
+				</Link>
 				<div className={styles.grid}>
 					<a
-						href='https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app'
+						href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
 						className={styles.card}
 					>
 						<h2>Deploy &rarr;</h2>
@@ -38,7 +46,7 @@ export default function Home() {
 							Instantly deploy your Next.js site to a public URL with Vercel.
 						</p>
 					</a>
-					<a href='https://nextjs.org/docs' className={styles.card}>
+					<a href="https://nextjs.org/docs" className={styles.card}>
 						<h2>Documentation &rarr;</h2>
 						<p>Find in-depth information about Next.js features and API.</p>
 					</a>
@@ -55,7 +63,9 @@ export default function Home() {
 						<h2>Examples &rarr;</h2>
 						<p>Discover and deploy boilerplate example Next.js projects.</p>
 					</a>
+
 				</div>
+
 			</main>
 
 			<footer className={styles.footer}>
